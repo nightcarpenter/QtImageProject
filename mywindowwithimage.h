@@ -2,6 +2,7 @@
 #define MYWINDOWWITHIMAGE_H
 
 #include <QMainWindow>
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,6 +17,8 @@ class MyWindowWithImage : public QMainWindow
 public:
     MyWindowWithImage(QWidget *parent = nullptr);
     ~MyWindowWithImage();
+
+    void SetPixmap(QLabel* label_pix, const QString path);
 
 private:
     Ui::MyWindowWithImage *ui;
